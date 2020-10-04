@@ -1,0 +1,20 @@
+{
+  "name": "@sdk-experimental-1/analysis",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "lib/core.js",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@sdk-experimental-1/core": "^0.0.0"
+  }
+}

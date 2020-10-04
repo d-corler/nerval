@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vscode
+
+# Compiled files
+lib/
+
+# Logs
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+.bluid-cache/
+
+# Dotenv environment variables file
+.env
+.env.*
+
+# Yarn v2 (not use Zero-Installs)
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
