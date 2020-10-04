@@ -1,3 +1,3 @@
-export const core = () => {
-    console.log("CORE")
+export const core = (text?: string): void => {
+    console.log(text ?? "CORE")
 };

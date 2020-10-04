@@ -10,6 +10,7 @@
     "removeComments": true,
     "strict": true,
     "moduleResolution": "node",
+    "emitDeclarationOnly": true,
     "baseUrl": "./packages",
     "paths": {
       "@nerval/*": ["./*/src"]

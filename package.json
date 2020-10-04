@@ -4,12 +4,19 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "lerna run --stream build",
+    "build": "run-s clean:cache build:packages",
+    "build:packages": "lerna run --stream build",
+    "clean": "run-p clean:cache clean:packages",
+    "clean:cache": "rimraf .build-cache",
+    "clean:packages": "lerna run --parallel clean",
     "test": "lerna run test",
-    "clean": "lerna run --parallel clean",
     "release": "lerna publish"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-jest": "^24.0.2",
     "jest": "^26.4.2",
     "lerna": "^3.22.1",
     "npm-run-all": "^4.1.5",

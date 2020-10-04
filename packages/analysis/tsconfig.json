@@ -1,8 +1,10 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./lib",
     "rootDir": "./src",
+    "declarationDir": "./lib/types",
+    "emitDeclarationOnly": false,
     "tsBuildInfoFile": "../../.build-cache/analysis.tsbuildinfo"
   },
   "references": [
