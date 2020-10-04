@@ -1,5 +1,5 @@
 {
-  "name": "@sdk-experimental-1/analysis",
+  "name": "@nerval/analysis",
   "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
@@ -15,6 +15,6 @@
     "lib"
   ],
   "dependencies": {
-    "@sdk-experimental-1/core": "^0.0.0"
+    "@nerval/core": "^0.0.0"
   }
 }

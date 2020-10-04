@@ -1488,6 +1488,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nerval/analysis@workspace:packages/analysis":
+  version: 0.0.0-use.local
+  resolution: "@nerval/analysis@workspace:packages/analysis"
+  dependencies:
+    "@nerval/core": ^0.0.0
+  languageName: unknown
+  linkType: soft
+
+"@nerval/core@^0.0.0, @nerval/core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@nerval/core@workspace:packages/core"
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.stat@npm:^1.1.2":
   version: 1.1.3
   resolution: "@nodelib/fs.stat@npm:1.1.3"
@@ -1627,20 +1641,6 @@ __metadata:
   checksum: ef5429c90b6d8d4a8816611f39ae469f238f0de76085818081b6185c9a53c9dd8e1e024000c633f935920bdb8075c18cea6475bb2c1fc67aa5d0f50c8e104a12
   languageName: node
   linkType: hard
-
-"@sdk-experimental-1/analysis@workspace:packages/analysis":
-  version: 0.0.0-use.local
-  resolution: "@sdk-experimental-1/analysis@workspace:packages/analysis"
-  dependencies:
-    "@sdk-experimental-1/core": ^0.0.0
-  languageName: unknown
-  linkType: soft
-
-"@sdk-experimental-1/core@^0.0.0, @sdk-experimental-1/core@workspace:packages/core":
-  version: 0.0.0-use.local
-  resolution: "@sdk-experimental-1/core@workspace:packages/core"
-  languageName: unknown
-  linkType: soft
 
 "@sinonjs/commons@npm:^1.7.0":
   version: 1.8.1
@@ -6361,6 +6361,19 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"nerval@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "nerval@workspace:."
+  dependencies:
+    jest: ^26.4.2
+    lerna: ^3.22.1
+    npm-run-all: ^4.1.5
+    rimraf: ^3.0.2
+    ts-jest: ^26.4.1
+    typescript: ^4.0.3
+  languageName: unknown
+  linkType: soft
+
 "nice-try@npm:^1.0.4":
   version: 1.0.5
   resolution: "nice-try@npm:1.0.5"
@@ -7828,19 +7841,6 @@ fsevents@^2.1.2:
   checksum: 6ad14be68da9b84af0fa3de346fd78bd3a8e8a73a462e2852279a1fff1e2619988919294001abe3ecef3783f9498962a0619d960ccca4ec2ca914526fde1acc2
   languageName: node
   linkType: hard
-
-"sdk-experimental-1@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "sdk-experimental-1@workspace:."
-  dependencies:
-    jest: ^26.4.2
-    lerna: ^3.22.1
-    npm-run-all: ^4.1.5
-    rimraf: ^3.0.2
-    ts-jest: ^26.4.1
-    typescript: ^4.0.3
-  languageName: unknown
-  linkType: soft
 
 "semver@npm:2 || 3 || 4 || 5, semver@npm:2.x || 3.x || 4 || 5, semver@npm:^5.4.1, semver@npm:^5.5.0, semver@npm:^5.5.1, semver@npm:^5.6.0, semver@npm:^5.7.0, semver@npm:^5.7.1":
   version: 5.7.1

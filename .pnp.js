@@ -19,24 +19,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "sdk-experimental-1",
+        "name": "nerval",
         "reference": "workspace:."
       },
       {
-        "name": "@sdk-experimental-1/analysis",
+        "name": "@nerval/analysis",
         "reference": "workspace:packages/analysis"
       },
       {
-        "name": "@sdk-experimental-1/core",
+        "name": "@nerval/core",
         "reference": "workspace:packages/core"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@sdk-experimental-1/analysis", ["workspace:packages/analysis"]],
-      ["@sdk-experimental-1/core", ["workspace:packages/core"]],
-      ["sdk-experimental-1", ["workspace:."]]
+      ["@nerval/analysis", ["workspace:packages/analysis"]],
+      ["@nerval/core", ["workspace:packages/core"]],
+      ["nerval", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lerna", "npm:3.22.1"],
             ["npm-run-all", "npm:4.1.5"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:80be9df94421f136a01fe964f02bce27820d51b0e7ef19cad4bb1687f98246c982dac387f2a2bea2d918a423a8fdcae66e4ffd1830dcc8b1610113b7ea8f742c#npm:26.4.1"],
+            ["ts-jest", "virtual:91b02fc3581bb7f6a18860e7679d9486aa26f0e7bde1945eb85a9f498143ae49b964524d98760b6b2f58a15edbf62b4c230f4a566375f47cb2e246e94a64817b#npm:26.4.1"],
             ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
           ],
           "linkType": "SOFT",
@@ -1694,6 +1694,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@nerval/analysis", [
+        ["workspace:packages/analysis", {
+          "packageLocation": "./packages/analysis/",
+          "packageDependencies": [
+            ["@nerval/analysis", "workspace:packages/analysis"],
+            ["@nerval/core", "workspace:packages/core"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@nerval/core", [
+        ["workspace:packages/core", {
+          "packageLocation": "./packages/core/",
+          "packageDependencies": [
+            ["@nerval/core", "workspace:packages/core"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@nodelib/fs.stat", [
         ["npm:1.1.3", {
           "packageLocation": "./.yarn/cache/@nodelib-fs.stat-npm-1.1.3-95bc1892a0-351499088e.zip/node_modules/@nodelib/fs.stat/",
@@ -1844,25 +1863,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.11.2"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["@sdk-experimental-1/analysis", [
-        ["workspace:packages/analysis", {
-          "packageLocation": "./packages/analysis/",
-          "packageDependencies": [
-            ["@sdk-experimental-1/analysis", "workspace:packages/analysis"],
-            ["@sdk-experimental-1/core", "workspace:packages/core"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["@sdk-experimental-1/core", [
-        ["workspace:packages/core", {
-          "packageLocation": "./packages/core/",
-          "packageDependencies": [
-            ["@sdk-experimental-1/core", "workspace:packages/core"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["@sinonjs/commons", [
@@ -7080,6 +7080,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["nerval", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["nerval", "workspace:."],
+            ["jest", "npm:26.4.2"],
+            ["lerna", "npm:3.22.1"],
+            ["npm-run-all", "npm:4.1.5"],
+            ["rimraf", "npm:3.0.2"],
+            ["ts-jest", "virtual:91b02fc3581bb7f6a18860e7679d9486aa26f0e7bde1945eb85a9f498143ae49b964524d98760b6b2f58a15edbf62b4c230f4a566375f47cb2e246e94a64817b#npm:26.4.1"],
+            ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["nice-try", [
         ["npm:1.0.5", {
           "packageLocation": "./.yarn/cache/nice-try-npm-1.0.5-963856b16f-330f190bf6.zip/node_modules/nice-try/",
@@ -8696,21 +8711,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["sdk-experimental-1", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["sdk-experimental-1", "workspace:."],
-            ["jest", "npm:26.4.2"],
-            ["lerna", "npm:3.22.1"],
-            ["npm-run-all", "npm:4.1.5"],
-            ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:80be9df94421f136a01fe964f02bce27820d51b0e7ef19cad4bb1687f98246c982dac387f2a2bea2d918a423a8fdcae66e4ffd1830dcc8b1610113b7ea8f742c#npm:26.4.1"],
-            ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
       ["semver", [
         ["npm:5.7.1", {
           "packageLocation": "./.yarn/cache/semver-npm-5.7.1-40bcea106b-06ff0ed753.zip/node_modules/semver/",
@@ -9686,10 +9686,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-jest", [
-        ["virtual:80be9df94421f136a01fe964f02bce27820d51b0e7ef19cad4bb1687f98246c982dac387f2a2bea2d918a423a8fdcae66e4ffd1830dcc8b1610113b7ea8f742c#npm:26.4.1", {
-          "packageLocation": "./.yarn/$$virtual/ts-jest-virtual-41068b586b/0/cache/ts-jest-npm-26.4.1-57675b03fb-d57275098b.zip/node_modules/ts-jest/",
+        ["virtual:91b02fc3581bb7f6a18860e7679d9486aa26f0e7bde1945eb85a9f498143ae49b964524d98760b6b2f58a15edbf62b4c230f4a566375f47cb2e246e94a64817b#npm:26.4.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-jest-virtual-d6993cda24/0/cache/ts-jest-npm-26.4.1-57675b03fb-d57275098b.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:80be9df94421f136a01fe964f02bce27820d51b0e7ef19cad4bb1687f98246c982dac387f2a2bea2d918a423a8fdcae66e4ffd1830dcc8b1610113b7ea8f742c#npm:26.4.1"],
+            ["ts-jest", "virtual:91b02fc3581bb7f6a18860e7679d9486aa26f0e7bde1945eb85a9f498143ae49b964524d98760b6b2f58a15edbf62b4c230f4a566375f47cb2e246e94a64817b#npm:26.4.1"],
             ["@types/jest", "npm:26.0.14"],
             ["@types/typescript", null],
             ["bs-logger", "npm:0.2.6"],

@@ -1,4 +1,4 @@
-import { core } from '@sdk-experimental-1/core';
+import { core } from '@nerval/core';
 
 export const analytics = () => {
     core();

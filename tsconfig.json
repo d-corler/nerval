@@ -12,7 +12,7 @@
     "moduleResolution": "node",
     "baseUrl": "./packages",
     "paths": {
-      "@sdk-experimental-1/*": ["./*/src"]
+      "@nerval/*": ["./*/src"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,

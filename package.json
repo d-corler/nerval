@@ -1,12 +1,13 @@
 {
-  "name": "sdk-experimental-1",
+  "name": "nerval",
   "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
     "build": "lerna run --stream build",
     "test": "lerna run test",
-    "clean": "lerna run --parallel clean"
+    "clean": "lerna run --parallel clean",
+    "release": "lerna publish"
   },
   "devDependencies": {
     "jest": "^26.4.2",
