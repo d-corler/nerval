@@ -3,7 +3,6 @@
   "compilerOptions": {
     "outDir": "./lib",
     "rootDir": "./src",
-    "declarationDir": "./lib/types",
     "emitDeclarationOnly": false,
     "tsBuildInfoFile": "../../.build-cache/analysis.tsbuildinfo"
   },

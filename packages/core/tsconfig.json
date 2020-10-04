@@ -3,7 +3,6 @@
   "compilerOptions": {
     "outDir": "./lib",
     "rootDir": "./src",
-    "declarationDir": "./lib/types",
     "tsBuildInfoFile": "../../.build-cache/core.tsbuildinfo"
   }
 }

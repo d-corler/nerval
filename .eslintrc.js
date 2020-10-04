@@ -8,7 +8,7 @@ module.exports = {
 	parserOptions: {
 		sourceType: 'module',
 		tsconfigRootDir: __dirname,
-		project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+		project: ['./tsconfig.eslint.json', './example/tsconfig.json', './packages/*/tsconfig.json'],
 		warnOnUnsupportedTypeScriptVersion: false
 	},
 	plugins: [
