@@ -1,6 +1,6 @@
 {
   "name": "@nerval/analysis",
-  "version": "0.0.1-alpha.4",
+  "version": "0.0.1-alpha.5",
   "license": "UNLICENSED",
   "main": "lib/core.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "lib"
   ],
   "dependencies": {
-    "@nerval/core": "^0.0.1-alpha.4"
+    "@nerval/core": "^0.0.1-alpha.5"
   },
   "repository": "https://github.com/d-corler/nerval",
   "gitHead": "39d54125da4fcbc594b5726bf890fd0744e9f99f"
