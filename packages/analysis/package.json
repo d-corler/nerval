@@ -7,8 +7,10 @@
     "build": "tsc -b"
   },
   "directories": {
-    "lib": "lib",
-    "test": "tests"
+    "clean": "rimraf lib/",
+    "build": "run-s clean build:default",
+    "build:default": "tsc -b",
+    "test": "jest"
   },
   "files": [
     "lib"
