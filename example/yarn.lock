@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-"@nerval/analysis@^0.0.1-alpha.8":
-  version "0.0.1-alpha.8"
-  resolved "https://registry.yarnpkg.com/@nerval/analysis/-/analysis-0.0.1-alpha.8.tgz#5039d1196048f5c534c14193c167da5b67c94445"
-  integrity sha512-V84sU4Ih27DlTnsOqLvQ5DM71YlEOeat5y3SQIqLPdH49VzVt0hSwIfBVaa7gMYFIIvbjvdH+i8whtXlFddaZA==
+"@nerval/analysis@^0.0.1-alpha.9":
+  version "0.0.1-alpha.9"
+  resolved "https://registry.yarnpkg.com/@nerval/analysis/-/analysis-0.0.1-alpha.9.tgz#62f0a0b2ac4163ac900626af7dcbe9932a38d4e0"
+  integrity sha512-jNzfSlkWnZKUhpsjAnFFwkxErF20qfKJDG8tQiFZjUhCas1VC1hkKpGMIbjENd/NroP62NSCyZIsgG6otrolTg==
   dependencies:
-    "@nerval/core" "^0.0.1-alpha.8"
+    "@nerval/core" "^0.0.1-alpha.9"
 
-"@nerval/core@^0.0.1-alpha.8":
-  version "0.0.1-alpha.8"
-  resolved "https://registry.yarnpkg.com/@nerval/core/-/core-0.0.1-alpha.8.tgz#e12e7f0465d0edbb17e0cdd2992f44dcf7c22599"
-  integrity sha512-5j8MhlN1BBD5PCcBsxu2i1Bg+mOevutdtsQMvJtLLVsDK2W86kvzp4zmlMRSM6hQaNUoVtSNtrPHrCZgprVTxw==
+"@nerval/core@^0.0.1-alpha.9":
+  version "0.0.1-alpha.9"
+  resolved "https://registry.yarnpkg.com/@nerval/core/-/core-0.0.1-alpha.9.tgz#ed7a357d373124965296caa936185dff3e89a86e"
+  integrity sha512-m7pRy4nFtLklk1piplbstaq89nzdCE9eXXqPvMFNrysU39bLstfqrZFtdVHxU/DWWoe04Jk+0V42f0PBV9Vqhg==
 
 arg@^4.1.0:
   version "4.1.3"
