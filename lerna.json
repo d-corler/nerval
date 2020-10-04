@@ -7,7 +7,7 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "tagVersionPrefix": "🔖"
+      "tagVersionPrefix": "🔖 v"
     }
   }
 }
