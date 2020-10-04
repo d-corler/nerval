@@ -1,6 +1,6 @@
 {
   "name": "@nerval/core",
-  "version": "0.0.1-alpha.8",
+  "version": "0.0.1-alpha.9",
   "license": "UNLICENSED",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
