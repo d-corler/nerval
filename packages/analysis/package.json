@@ -4,13 +4,14 @@
   "license": "UNLICENSED",
   "main": "lib/core.js",
   "scripts": {
-    "build": "tsc -b"
-  },
-  "directories": {
     "clean": "rimraf lib/",
     "build": "run-s clean build:default",
     "build:default": "tsc -b",
     "test": "jest"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
   },
   "files": [
     "lib"
